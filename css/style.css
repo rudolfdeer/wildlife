@@ -394,6 +394,77 @@ body {
 .articles-slider {
   height: 360px;
   margin-bottom: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articles-slider_arrow {
+  width: 30px;
+  height: 70px;
+}
+
+.articles-slider_allcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+}
+
+.articles-slider_card {
+  height: 360px;
+  width: 300px;
+}
+
+#card_1 {
+  background: url(../img/articles-slider_1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#card_2 {
+  background: url(../img/articles-slider_2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#card_3 {
+  background: url(../img/articles-slider_3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.article-slider_card-texts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.articles-slider_card_title {
+  width: 100%;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+
+  text-align: center;
+
+  color: #f7f7f7;
+  padding-top: 247px;
+}
+
+.article-slider_card-subtitle {
+  width: 100%;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+
+  text-align: center;
+
+  color: #f7f7f7;
+  padding-top: 10px;
 }
 
 .email-form_title {
@@ -458,6 +529,8 @@ body {
   line-height: 27px;
   color: #f7f7f7;
   background: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
