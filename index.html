@@ -12,7 +12,9 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
+    <!-- header start -->
     <header class="header">
       <div class="wrapper">
         <div class="header_wrapper">
@@ -48,8 +50,10 @@
         </div>
       </div>
     </header>
-
+<!-- header end -->
     <main class="main">
+
+    <!-- intro start -->  
       <section class="intro">
         <div class="wrapper">
           <h1 class="intro_title">Survival</h1>
@@ -60,22 +64,47 @@
           <button class="btn_intro">Donate</button>
         </div>
       </section>
+ <!-- intro end -->  
 
+  <!-- articles start -->  
       <section class="articles">
         <div class="wrapper">
-        
-        
+          <div class="articles_header">
+            <h2 class="articles_title">Latest articles</h2>
+            <p class="articles_subtitle">Breaking news from the wild</p>
+          </div>
+
+          <div class="articles-slider">
+            <div class="articles-slider_arrow-left"></div>
+            <div class="articles-slider_card"></div>
+            <div class="articles-slider_card"></div>
+            <div class="articles-slider_card"></div>
+            <div class="articles-slider_arrow-right"></div>
+          </div>
+
+          <div class="email-form_title">
+            <p class="email-form_title_text">
+              Get notified about new amazing articles
+            </p>
+          </div>
+
           <form action="" class="email-form">
-          <p class="email-form_info">
-          <input type="text" class="email-form_field" placeholder="Email">
-          <button type="submit" class="email-form_btn">Send</button>
-          </p>
-        </form>
-
-
+            <p class="email-form_info">
+              <input
+                type="text"
+                class="email-form_field"
+                placeholder="Email"
+                name="user_email"
+              />
+              <button type="submit" class="email-form_btn">Send</button>
+            </p>
+          </form>
         </div>
       </section>
-      
+<!-- articles end --> 
+
     </main>
+
   </body>
+  
 </html>
