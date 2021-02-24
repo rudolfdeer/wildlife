@@ -222,6 +222,12 @@ img {
   margin-right: 0;
 }
 
+.header_item:not(:last-child):hover,
+.header_logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .header_logo-link {
   display: flex;
   flex-wrap: wrap;
@@ -605,6 +611,13 @@ img {
   text-transform: uppercase;
 
   color: #f7f7f7;
+}
+
+.footer_logo:hover,
+.footer_menu-item:hover,
+.footer_social-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .footer_nav {
