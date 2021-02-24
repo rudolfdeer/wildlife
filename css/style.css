@@ -184,6 +184,11 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header styles start */
 
 .header {
@@ -191,6 +196,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .header_wrapper {
@@ -271,6 +277,13 @@ body {
 #btn_sign-in:active {
   background: #8f5613;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_active {
+  background: #134731;
+  opacity: 0.9;
+  transition: 0.2s linear;
+  padding-bottom: 10px;
 }
 
 /* Header styles end */
@@ -405,6 +418,11 @@ body {
   height: 70px;
 }
 
+.articles-slider_arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .articles-slider_allcards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -414,6 +432,11 @@ body {
 .articles-slider_card {
   height: 360px;
   width: 300px;
+}
+
+.articles-slider_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 #card_1 {
@@ -536,6 +559,7 @@ body {
 
 .email-form_btn:hover {
   background: #e39128;
+  border: 1px solid #e39128;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -546,3 +570,86 @@ body {
 }
 
 /*Articles style end*/
+
+/*Footer style start*/
+
+.footer {
+  min-height: 360px;
+  background: url(../img/footer-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+.footer_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer_logo {
+  width: 33.3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-logo-name {
+  padding-left: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+}
+
+.footer_nav {
+  width: 33.4%;
+}
+
+.footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_menu-item-link {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+
+  color: #f7f7f7;
+}
+
+.footer_links {
+  width: 33.3%;
+}
+
+.footer_social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_social-item {
+  padding-left: 27px;
+}
+
+.footer_social-item:first-child {
+  padding-left: 0;
+}
+
+.footer_social-logo {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/*Footer style end*/
