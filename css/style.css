@@ -246,10 +246,13 @@ img {
   margin-right: 0;
 }
 
-.header_item:not(:last-child):hover,
 .header_logo:hover {
+  transform: scale(1.1);
+}
+
+.header_link:hover {
   cursor: pointer;
-  opacity: 0.8;
+  color: #cd6326;
 }
 
 .header_logo-link {
@@ -284,6 +287,16 @@ img {
   font-size: 23px;
   line-height: 60px;
   color: #f7f7f7;
+}
+
+.search-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #btn_sign-in {
@@ -546,7 +559,7 @@ img {
 .email-form_field {
   border: 0;
   border: 1px solid #666666;
-  width: 510px;
+  width: 540px;
   height: 60px;
   padding-left: 15px;
   padding-right: 15px;
@@ -617,11 +630,12 @@ img {
 }
 
 .footer_logo {
-  width: 33.3%;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  padding-right: 120px;
 }
 
 .footer-logo-name {
@@ -638,14 +652,13 @@ img {
 }
 
 .footer_logo:hover,
-.footer_menu-item:hover,
 .footer_social-item:hover {
   cursor: pointer;
-  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .footer_nav {
-  width: 33.4%;
+  width: 40%;
 }
 
 .footer_menu {
@@ -665,8 +678,13 @@ img {
   color: #f7f7f7;
 }
 
+.footer_menu-item-link:hover {
+  color: #cd6326;
+  cursor: pointer;
+}
+
 .footer_links {
-  width: 33.3%;
+  width: 30%;
 }
 
 .footer_social {
